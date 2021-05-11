@@ -1,137 +1,223 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <head>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+         <link rel="stylesheet" type="text/css" href="CSSTEST.css">
+         <!-- 합쳐지고 최소화된 최신 CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
+        <!-- 부가적인 테마 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
-  <!-- 합쳐지고 최소화된 최신 CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">   
+         <title> My Blog </title>
+        <style>
+            * { box-sizing: border-box;}
+            @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP:wght@500;700&family=Noto+Sans+KR:wght@100&display=swap');
+            html,body { margin: 0px;
+            font-family: 'Noto Sans KR', sans-serif;
+                    }
 
-    <!-- 부가적인 테마 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+            #main{ display: flex; 
+                   margin-left: 3%;
+                   margin-right: 3% }
+            html,body { height: 100%;
+                }
+            .header { background-color: rgb(182, 229, 214);
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsODj0hu31lh_KHHNgXZamQWvgGXuMlojiUQ&usqp=CAU);
+                      padding-top: 50px;
+                      padding-bottom: 50px;                   
+                      height: 200px;
+                      width: 100%;
+                      text-align: center;
+                      color: rgb(243, 118, 118);
+                      
+                }
 
-    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <title>github따라잡기</title>
-</head>
-<body>
-    <ul class="nav nav-tabs nav-justified">
-        <li role="presentation" class="active"><a href="https://namu.wiki/w/%EC%84%9C%EC%9D%B8%EA%B5%AD">서인국</a></li>
-        <li role="presentation"><a href="https://namu.wiki/w/%EC%A0%95%ED%95%B4%EC%9D%B8">정해인</a></li>
-        <li role="presentation"><a href="https://namu.wiki/w/%EC%A0%95%EC%9D%80%EC%A7%80">정은지</a></li>
-      </ul> <br>
+            h1{font-family: 'Lobster', cursive;
+                           }
 
-      <div class = "container">
-        <form class="form-inline">
-          <div class="form-group">
-            <label for="exampleInputName2">이름</label>
-            <input type="text" class="form-control" id="exampleInputName2" placeholder="강 병우">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail2">이메일</label>
-            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="xxx @ xxx.com">
-          </div>
-          <button type="submit" class="btn btn-default">입력</button>
-        </form><br>
-
-    
-        
-    <div class="jumbotron">
-        <h3 class= "display-6">배우들의 필모를 한눈에</h3>
-        <hr class= "my-3">
-        <p>다 배웠는데 더 배우라고 하는 사람은?<br></p>
-        <p><a class="btn btn-primary btn-lg" href="https://namu.wiki/w/%EB%B0%B0%EC%9A%B0" role="button">정답</a></p>
-      </div><br>
-      <div class="alert alert-danger" role="alert"> 정답 버튼을 누르지 마세요!! </div><br>
-      <div class="form -row">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="snowman.jpg" alt="..." class="img-rounded">
+            .content { background-color: rgb(245, 157, 157);
+                flex: 80%;
+                padding : 40px;
+                margin-right: 3%;
+                margin-top: 20px;
+                color: white;
             
-            <div class="caption">
-              <h3>서인국</h3>
-              <p>슈퍼스타K 출연 당시 초반에는 현재의 모습보다 많이 듬직한 외모 때문에 주목받지 못했지만, 슈퍼 위크와 탑 10을 거치며 다이어트에 성공하고 외모 포텐셜이 터져 여성팬들의 큰 지지를 얻었다. 생방 초기에는 조문근이나 길학미 등의 유력한 우승 후보자들에게 가려져 상대적으로 두각을 나타내지 못했으나, 신인 작곡가와 함께 하는 3회 때부터 자신의 색깔에 맞는 R&B 음악을 들고 나오면서 실력적으로도 포텐셜이 폭발하여 이후 전폭적인 지지를 받게 되었다.</p>
-              <p><a href="#" class="btn btn-primary" role="button">좋아요</a> <a href="#" class="btn btn-default" role="button">싫어요</a></p>
-               </div>
-            </div>
-          </div>
-         </div>
-      
-
-      <div class="form -row">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="heoin.jfif" alt="..." class="img-thumbnail">
+                }
             
-            <div class="caption">
-              <h3>정해인</h3>
-              <p>대중들에게 알려지기 시작한 것은 드라마 도깨비에서 여주인공 지은탁의 첫사랑인 최태희 역으로 특별출연한 이후였는데, 방송 이후 이 드라마는 카메오까지 잘생겼냐며 좋은 반응을 얻었다. 같은 시기에 방영한 불야성에서는 꽤 비중있는 배역으로 출연했음에도 드라마가 많이 알려지지 못해서 정해인이 출연했다는 사실조차 모르는 사람들이 많은데, 오히려 잠깐 특별출연한 도깨비를 통해 인터넷과 SNS 등에서 제법 화제가 되어 한동안 '태희 오빠'라는 수식어가 따라 다녔다.</p>
-              <p><a href="#" class="btn btn-primary" role="button">좋아요</a> <a href="#" class="btn btn-default" role="button">싫어요</a></p>
-            </div>
-          </div>
+            .aside{
+                    flex: 20%;
+                    padding: 40px;
+                    padding-top: 20px;
+                   
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    
+                }   
+                .aside1{ 
+                margin-right: 0px;
+                margin-left: 0px;
+                
+               
+                 
+                }
+
+            .aside2{ font-size: 16px; 
+                     font-family: 'Noto Sans KR', sans-serif;
+                     font-weight: bold;}
+
+            .tap{ display: flex;
+                
+                height: 50px;
+            }
+            
+            .navbar{
+                    display: flex;
+                    height: 30px;
+                    flex: 80%;
+                    justify-content: space-between;
+                    font-size: 18px;
+                    margin-left: 50px;
+                    }
+            .navbar a{
+                padding: 15px;
+                margin-right: 20px;
+                
+                
+             }
+            .navbar a:hover{
+                background-color: thistle;
+                color: white;                
+                ;
+                 border-radius: 20px; 
+                
+                
+            }
+            .col-lg-6{ flex: 15%;
+                padding-top: 10px;
+            }
+            .footer{
+                 padding: 30px;
+                text-align: center;
+                                               
+            }
+            .radio-inline{
+                font-size: 12px;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+
+            body{ display: flex;
+                flex-direction: column;}
+
+            #main{ flex: 1;}
+
+            .footer{ flex-shrink: 0;
+                font-family: 'Lobster', cursive;
+                color: rgb(243, 118, 118);}     
+            
+            
+
+                                                       
+        </style>
+            
+        </style>
+
+    </head>
+
+
+    <body>
+        <header class="header">
+            <h1 >Welcome to My Blog</h1>
+            
+        </header>
+
+        <tap class="tap">
+            <nav class="navbar">
+            <a href="">Home</a>
+            <a href="">Reference</a>
+            <a href="https://github.com/Seoinguk-1023/new.git">My git hub</a>
+            </nav>
+            
+            <div class="col-lg-6">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">검색</button>
+                  </span>
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </tap>
+            
+            <div id="main">
+       
+            <article class="content">
+                <h2>강병우</h2>
+                <h3>상단의 탭에 있는 Reference를 눌러보세요. </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rem, et voluptate minus esse, veritatis laboriosam mollitia illum quo deleniti, maxime aliquam cumque quam at illo velit omnis. Eveniet, illum.</p>
+            </article>
+            <aside class="aside">
+                <aside class="aside1">
+                <h3 style="height: 50px;">Log-in</h3>
+                
+                     <form class="form-horizontal">
+                    <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <div  class="checkbox">
+                          <label>
+                            <input type="checkbox"> 이메일 저장하기
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div  class="col-sm-offset-2 col-sm-10">
+                        <button style="float: right;" type="submit" class="btn btn-default">로그인</button>
+                      </div>
+                    </div>
+                  </form>
+                </aside>
+                <br><br><br><br><br><br>
+                  <p class="aside2"> Use of the web 
+                 <br>
+                  사용하는 브라우저를 선택해주세요!<br>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Chrome
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Explore
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Safari
+                  </label>
+                  <div class="alert alert-warning" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Chrome</strong> <br> 크롬브라우저 사용을 선택하셨습니다.
+                  </div>
+                </p>
+            </aside>
         </div>
-      </div>
-
-      <div class="form -row">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="정은지.jfif" alt="..." class="img-thumbnail">
-            
-            <div class="caption">
-              <h3>정은지</h3>
-              <p>부산 출신으로, 중1까지만 해도 본명은 정혜림(鄭惠林)이었다. 이름을 개명한 이유는 2011년 6월 10일 에이핑크 뉴스에서 공개됐는데 철학관에 갔더니 정혜림이라는 이름은 본인에게는 좋으나, 어머니께 좋지 않은 이름이란 얘기를 듣고 중학교 때 정은지로 개명했다. 어릴 때 나간 동요 경연 대회에서도 정혜림이라는 이름을 확인할 수 있다. 중학교부터 고등학교까지 졸업 사진에서는 정은지라고 쓰여있다.
-              </p>
-                <p><a href="#" class="btn btn-primary" role="button">좋아요</a> <a href="#" class="btn btn-default" role="button">싫어요</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      
-    
-      <br>
-      <div class = "container">
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="가장 좋아하는 배우는?">
-        </div>        
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form> <br><br>
-    
-
-    <br>
-    <h3>피드백 받습니다<div class=""></div></h3>
-    <div class="alert alert-info" role="alert"> 하단에 피드백을 적어주세요!!! </div>
-    <textarea class="form-control" rows="5" > 피드백을 적어주세요!!! </textarea>
-        
-    <input type="submit" class="btn btn-default"> <h3><a href="https://github.com/Seoinguk-1023/new.git">Github Link</a><h3>
-  
-      <br>
-      <nav><ul class="pagination pagination-lg">
-          <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-          <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-        
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li>
-          <a href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-    
-
-  </div>
-</body>
+        <footer class="footer">
+            <H2>Welcome to Ma World</H2>
+        </footer>
+    </body>
+    </body>
 </html>

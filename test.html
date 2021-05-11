@@ -3,16 +3,83 @@
     <head>
         <title>병우입니다.test</title>
         <style>
-            a[h2] { color: red; }
+            * { box-sizing: border-box;}
+            body { margin: 0;}
+            a{text-decoration: none;}
+            a:link, a:visited a:active {color: inherit;}
+
+            header{background-color: lightcoral;}
+            nav{background-color: lightsalmon;}
+            aside{background-color: palegoldenrod;}
+            footer{background-color: palegreen;}
+
+            #main{
+                display: flex;
+            }
+            .content{ flex: 70%; 
+                      padding: 40px;
+                      font-size: 40px; }
+
+            .aside{ flex: 30%;
+                    padding: 40px;
+                }
+
+            .navbar{ display: flex;
+                    justify-content: space-around;
+                    font-size: 20px;
+            }
+            .navbar a{
+                padding: 20px;
+                margin-right: 20px;
+                
+             }
+            .navbar a:hover{
+                color: black;
+                background-color: white;
+            }
+
+            .header{ padding: 100px;
+                    text-align: center;
+                    font-size: 50px}
+            .footer{ padding: 30px;
+                    text-align: center;}  
+
+            html,body { height: 100%;}     
+
+            body{ display: flex;
+                flex-direction: column;}
+
+            #main{ flex: 1;}
+
+            .footer{ flex-shrink: 0;}                                                 
         </style>
     </head>
     <body>
-        <h1>병우입니다.</h1>
-        <p>it its p tag</p>
-        <h2 id="inguk">small h2</h2>
-        <p class="content">2nd p tag</p>
-        <h2>gdsgsa</h2>
-        <p class="content">세번째 피태그</p>
+        
+        <header class="header">
+            <h1>Webpage</h1>
+        </header>
+
+        <nav class="navbar">
+            <a href="">home</a>
+            <a href="">about</a>
+            <a href="">Q&A</a>
+        </nav>
+
+        <div id="main">
+            <article class="content">
+                <h2>about me</h2>
+                <h3>intro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rem, et voluptate minus esse, veritatis laboriosam mollitia illum quo deleniti, maxime aliquam cumque quam at illo velit omnis. Eveniet, illum.</p>
+            </article>
+            <aside class="aside">
+                <h2>ad</h2>
+                <p>Lorem ipsudm dolor sit amet consectetur adipisicing elit. Libero velit optio doloremque modi itaque, odio nobis eveniet officiis corporis nihil ea repudiandae fugit repellat architecto ipsum ipsam illo vel impedit.</p>
+            </aside>
+        </div>
+        <footer class="footer">
+            <H2>footer</H2>
+        </footer>
     </body>
     
 </html>
